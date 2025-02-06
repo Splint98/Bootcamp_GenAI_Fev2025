@@ -9,7 +9,7 @@ values = [10, 20, 30]
 
 #Output expected : {'Ten': 10, 'Twenty': 20, 'Thirty': 30}
 
-zipped = zip(keys, vealues)
+zipped = zip(keys, values)
 Output = dict(zipped)
 print(Output)
 
