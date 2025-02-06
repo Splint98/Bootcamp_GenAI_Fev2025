@@ -1,23 +1,19 @@
-# Dictionnaire initial de la famille
-family = {"rick": 43, 'beth': 13, 'morty': 5, 'summer': 8}
+import random
+def nmb_guess():
+    random_number = random.randint(1, 100)
+    max_attempts = 7
+    attempt = 0
 
-# Fonction pour calculer le prix du billet selon l'âge
-def calculate_ticket_price(age):
-    if age < 3:
-        return 0
-    elif 3 <= age <= 12:
-        return 10
-    else:
-        return 15
-
-# Variable pour le coût total
-total_cost = 0
-
-# Calcul du coût pour chaque membre de la famille
-for member, age in family.items():
-    price = calculate_ticket_price(age)
-    total_cost += price
-    print(f"{member.capitalize()} has to pay ${price}")
-
-# Affichage du coût total
-print(f"\nTotal cost for the family: ${total_cost}")
+    for attempt in range(max_attempts):
+        num = int(input(f"Trouve le nombre entre 1 et 100. Vous avez fait {attempt} tentative: "))
+        if num < random_number:
+            print("Trop bas!")
+            attempt = attempt + 1
+        elif num > random_number:
+            print("Trop haut!")
+            attempt = attempt + 1
+        else: 
+            print("Félicitation! Vous avez deviné le nombre!")
+            return
+    print("Vous avez épuisé toute vos tentative! Le nombre était le ", random_number)
+nmb_guess()
