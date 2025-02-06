@@ -1,3 +1,4 @@
+# dans l'arbre : ~/Documents/Bootcamp_GenAI_Fev2025
 # Git add .
 # Git commit -m "chaine de commentaire"
 
@@ -8,7 +9,7 @@ values = [10, 20, 30]
 
 #Output expected : {'Ten': 10, 'Twenty': 20, 'Thirty': 30}
 
-zipped = zip(keys, values)
+zipped = zip(keys, vealues)
 Output = dict(zipped)
 print(Output)
 
