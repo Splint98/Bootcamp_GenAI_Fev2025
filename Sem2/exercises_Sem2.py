@@ -157,7 +157,6 @@ def get_random_temp(season):
         print("Saison invalide, génération d'une température par défaut entre -10 et 40°C.")
         return random.randint(-10, 40)
 
-# Étape 2 : Définition de la fonction principale
 def main():
     season = input("Entrez une saison (hiver, printemps, ete, automne) : ").strip().lower()
 
