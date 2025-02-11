@@ -18,13 +18,17 @@ word = input("Entrez un mot : ").strip()
 
 # Initialiser un dictionnaire vide
 letter_indexes = {}
+# Initialiser un compteur d'index
+index = 0
 
-# Parcourir chaque lettre du mot avec son index
-for index, letter in enumerate(word):
+# Parcourir chaque lettre du mot
+#for index, letter in enumerate(word): Possible avec enumerate sans index aussi, mais pas trouvé ça moi meme, je le note quand meme pour moi 
+for letter in word:
     if letter in letter_indexes:  # Si la lettre est déjà dans le dictionnaire
         letter_indexes[letter].append(index)  # Ajouter l'index à la liste existante
     else:
         letter_indexes[letter] = [index]  # Créer une nouvelle liste avec l'index
+    index += 1  # Incrémenter l'index à chaque itération
 
 # Afficher le dictionnaire résultant
 print(letter_indexes)
