@@ -9,16 +9,16 @@ print(result)
 my_name = "Jean"  # Remplace par ton prénom
 user_name = input("Quel est ton nom ? ")
 if user_name.lower() == my_name.lower():
-    print("Wow, on a le même nom !")
+    print("On a le même nom ! ")
 else:
     print(f"Sympa de te rencontrer, {user_name} !")
 
 # Exercice 4 :
 height = int(input("Quelle est ta taille en cm ? "))
 if height > 145:
-    print("Tu es assez grand pour faire le manège !")
+    print("Tu es assez grand !")
 else:
-    print("Désolé, tu dois encore grandir un peu...")
+    print("Tu dois encore grandir un peu...")
 
 # Exercice 5 :
 my_fav_numbers = {7, 14, 21}  # Exemple
